@@ -1,0 +1,32 @@
+section,.button-container{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    min-width: 400px;
+  }
+  section .button-div{
+    padding: 0px;
+  }
+  
+  section h3{
+    margin-right: 80px;
+    display: inline;
+    font-size: 18px;
+  }
+  section>form>button{
+    float: right;
+  }
+  section>div >:nth-child(2) {
+    float: right;
+  }
+  section form{
+    padding-bottom: none;
+  }
+  .button-container{
+    text-align: center;
+  }
+  .button-container :first-child{
+    margin-right: 40px;
+    color: red;
+  }

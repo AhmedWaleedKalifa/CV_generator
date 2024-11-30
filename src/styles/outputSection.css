@@ -1,0 +1,19 @@
+image{
+    width: auto;
+    height: auto;
+    object-fit: fill;
+  
+  }
+  .output-section{
+    background-color: rgba(0, 0, 136, 0.126);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  li{
+    padding-left: 20px;
+  }
+  
+  ul{
+    padding: 10px;
+  }
