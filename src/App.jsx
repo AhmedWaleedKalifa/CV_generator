@@ -2,8 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import InputSectionComponent from './components/InputSectionComponent.jsx'
 import CVView from './components/CVView.jsx';
-import OutputSection from './components/OutputSection.jsx';
-
+import DownloadCV from './components/DowloadCV.jsx';
 function App() {
   const [image,setImage]=useState();
   const [name,setName]=useState("");
@@ -39,7 +38,7 @@ function App() {
       <main>
         <div className='button-container'>
           <button onClick={handelDeleteClick}>Clear</button>
-          <button onClick={handelDownload}>Download</button>
+          <DownloadCV formInfo={[{title:"Personal", array:[{name:"image",value:image},{name:"Name",value:name},{name:"Email",value:email},{name:"Phone",value:phone}]},{title:"Educational experience",array:[{name:"School name",value:school},{name:"Title of education",value:titleOfEducation},{name:"Date of education",value:dateOfEducation}]},{title:"Practical experience",array:[{name:"Company name", value:company},{name:"Position title",value:positionTitle},{name:"Main responsibilities",value:mainResponsibilities},{name:"Start date",value:startDate},{name:"End date",value:endDate}]}]}/>
         </div>
         <InputSectionComponent title="General Information" array={[{id:"image",text:"Upload image:",type:"file",value:image,setValue:setImage},{id:"name",text:"Name:",value:name,setValue:setName},{id:"email",text:"Email:",type:"email",value:email,setValue:setEmail},{id:"phone",text:"Phone Number:",value:phone,setValue:setPhone}]}/>
         <InputSectionComponent title="Education Experience" array={[{id:"schoolName" ,text:"School Name:",value:school,setValue:setSchool},{id:"titleOfEducation",text:"Title of education:",value:titleOfEducation,setValue:setTitleOfEducation},{id:"dataOfEducation",text:"Data of education:",type:"date",value:dateOfEducation,setValue:setDateOfEducation}]}/>
