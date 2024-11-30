@@ -1,37 +1,40 @@
 .input-div{
     color: var(--main-color);
-    padding: 15px 10px;
-    font-size: 14px;
+    padding: 1rem .7rem;
 }
 .input-div label{
-    margin:5px 0;
+    margin:.28rem 0;
     display: block;
+    font-size: .95rem;
 }
 .input-div input,.input-div textarea{
     display: block;
-    border-radius: 8px;
-    padding: 5px 10px;
+    border-radius: .5rem;
+    padding: .28rem .65rem;
     background-color: #eee;
     border: 1px solid transparent;
     color: var(--main-color);
-    width: 100%;
+    width: 95%;
 
 }
-.input-div:focus,textarea:focus{
-    border: 1px solid rgba(0, 106, 255, 0.9);
+input{
+    font-size: .95rem;
+}
+input:focus,textarea:focus{
     outline: none;
+    border: 1px solid rgba(0, 106, 255, 0.9);
     box-shadow: 0 0 4px rgba(0, 106, 255, 0.9);
     transition: box-shadow .7s .2s,border .7s .2s;
 }
 input[type="file"]::file-selector-button{
-    width: 50px;
+    /* width: 3rem; */
     padding: 0;
     outline: none;
-    border: none !important;
+    border: none;
     text-align: center;
 }
 input[type="file"]{
-    width: 50px;
+    /* width: 3rem; */
     color: transparent;
 }
 

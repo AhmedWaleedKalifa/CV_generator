@@ -1,21 +1,25 @@
 section,.button-container{
     background-color: #ffffff;
-    padding: 20px 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    min-width: 400px;
+    padding: 1.3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    width: 25rem;
   }
   section .button-div{
     padding: 0px;
   }
   
   section h3{
-    margin-right: 80px;
+    margin-right: 5rem;
     display: inline;
-    font-size: 18px;
+    font-size: 1.125rem;
+  }
+  section>form{
+    position: relative;
   }
   section>form>button{
-    float: right;
+    position: absolute;
+    right: 0;
   }
   section>div >:nth-child(2) {
     float: right;
@@ -27,6 +31,6 @@ section,.button-container{
     text-align: center;
   }
   .button-container :first-child{
-    margin-right: 40px;
+    margin-right: 2.5rem;
     color: red;
   }

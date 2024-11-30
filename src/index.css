@@ -11,17 +11,17 @@
   color: var(--main-color);
   font-family: sans-serif;
   --second-color:#eee;
-  
 }
 #root{
   padding: 0;
+}
+body{
+  font-size: 16px;
 }
 .container{
   background-color: var(--second-color);
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height:100vh;
   padding: 0;
   margin: 0;
   justify-content: center;
@@ -29,14 +29,15 @@
 
  button{
   color: var(--main-color);
-  border-radius: 8px;
+  border-radius: .5rem;
   border:1px solid transparent;
-  padding: 6px 12px;
+  padding: .5rem 1rem;
+  font-size: .8rem;
 }
 
 
 main{
-  padding: 80px 100px;
+  padding: 5rem 6.5rem;
   scrollbar-color: transparent transparent;
   scrollbar-width: none;
   overflow-y: scroll;
@@ -45,9 +46,165 @@ main{
 .buttons-div{
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
 }
 
 div{
   padding: 0px;
+}
+@media (max-width : 2000px) {
+  body{
+    font-size: 18px;
+  }
+  .container{
+    flex-wrap: nowrap;
+  }
+  aside{
+    width: 850px;
+    height: 93vh;
+  }
+}
+@media (max-width : 1490px){
+  body{
+    font-size: 20px;
+  }
+  .container{
+    flex-wrap: wrap;
+  }
+  section,.button-container{
+    padding: 1.7rem 3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+    min-width: 54rem;
+  }
+  section h3{
+    margin-right: 6.5rem;
+  }
+  aside{
+    min-width: 940px;
+    height: 94vh;
+
+  }
+  button{
+    font-size: 1rem;
+  }
+  .output-section{
+      font-size: .8em;
+  }
+}
+ @media (max-width : 1156px) {
+  body{
+    font-size: 18px;
+  }
+  .container{
+    flex-wrap: wrap;
+  }
+  section,.button-container{
+    padding: 1.6rem 2.6rem;
+    border-radius: 1.25rem;
+    margin-bottom: 2.6rem;
+    min-width: 49rem;
+  }
+  section h3{
+    margin-right: 5.4rem;
+  }
+  aside{
+    min-width: 650px;
+  }
+  button{
+    font-size: .9rem;
+  }
+}
+
+@media (max-width : 1060px) {
+  body{
+    font-size: 16px;
+  }
+  .container{
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  section,.button-container{
+    padding: 1.3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    min-width: 37rem;
+  }
+  section h3{
+    margin-right: 5rem;
+  }
+  aside{
+    max-width: 650px;
+    min-width: 650px;
+    height: 700px;
+  }
+  button{
+    font-size: .8rem;
+  }
+  .image-container{
+    max-width: 10rem;
+    max-height: 9.5rem;
+  }
+  main{
+    padding: 10px;
+  }
+}
+@media (max-width: 660px) {
+  body{
+    font-size: 12px;
+  }
+  .container{
+    flex-wrap: wrap;
+  }
+  section,.button-container{
+    padding: 1.3rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    min-width: 12rem;
+  }
+  section h3{
+    font-size: 1em;
+  }
+  aside{
+    max-width: 460px;
+    min-width: 460px;
+    max-height: 620px;
+    overflow-y: hidden;
+  }
+  .image-container{
+    max-width: 8rem;
+    max-height: 7.7rem;
+  }
+}
+
+
+@media (max-width : 495px) {
+  body{
+    font-size: 10px;
+  }
+  .container{
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  section,.button-container{
+    padding: 8px ;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+  
+    max-width: 11rem;
+  }
+  .button-container{
+    display: flex;
+    flex-direction: row;
+  }
+  aside{
+    min-width: 300px;
+    max-width: 350px;
+    max-height: 620px;
+    overflow-y:visible;
+  }
+  .image-container{
+    max-width: 7rem;
+    max-height: 6.6rem;
+  }
 }

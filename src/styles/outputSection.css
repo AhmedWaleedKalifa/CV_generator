@@ -1,19 +1,21 @@
 image{
     width: auto;
     height: auto;
-    object-fit: fill;
+    object-fit: cover;
   
   }
   .output-section{
     background-color: rgba(0, 0, 136, 0.126);
-    padding: 20px;
+    padding: 1.3rem;
     text-align: center;
-    margin-top: 10px;
+    margin-top: .45rem;
+    font-size: 1em;
   }
   li{
-    padding-left: 20px;
+    padding-left: 1.3rem;
+    overflow:hidden;
   }
   
   ul{
-    padding: 10px;
+    padding: .65rem;
   }

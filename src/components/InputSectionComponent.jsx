@@ -1,6 +1,6 @@
 import { useState } from "react"
 import FormInput from "./InputItem"
-import "../styles/sectionComponent.css"
+import "../styles/inputSectionComponent.css"
 export default function InputSectionComponent({title,array}){
     const [display,setDisplay]=useState(false)
     const [expand,setExpand]=useState(true)

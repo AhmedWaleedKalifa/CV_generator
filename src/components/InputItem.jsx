@@ -1,4 +1,4 @@
-import '../styles/InputItem.css';
+import '../styles/inputItem.css'
 
 export default function InputItem({ id, text = "", type = "text", isInput = true,value,setValue}) {
 

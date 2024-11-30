@@ -1,9 +1,12 @@
 aside{
     background-color: #008;
-    width: 55%;
+    /* min-width: 850px; */
+    /* width: 850px; */
+    /* height: 94vh; */
+    flex-shrink: 0;
     display: flex;
-    margin: 30px;
-    box-shadow: 5px 10px 5px rgba(147, 147, 147, 0.431);
+    margin: 2rem;
+    box-shadow: .33rem .67rem .33rem rgba(147, 147, 147, 0.431);
   }
   .left{
     width: 35%;
@@ -14,15 +17,15 @@ aside{
   .right{
     background-color:#ffffff;
     width: 65%;
-    padding: 20px;
+    padding: 1.3rem;
   
   }
   .image-container{
-    width: 220px;
-    height: 200px;
+    width: 14rem;
+    height: 13rem;
     border-radius: 50%;
     background-color: #ffffff;
-    margin: 0px auto 100px auto;
+    margin: 0px auto 6.3rem auto;
     display: block;
   }
   

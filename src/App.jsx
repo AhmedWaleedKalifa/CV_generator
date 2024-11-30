@@ -30,9 +30,6 @@ function App() {
     setStartDate("")
     setEndDate("")
   }
-  function handelDownload(){
-    
-  }
   return (
     <div className='container'>
       <main>
@@ -49,5 +46,4 @@ function App() {
    
   )
 }
-
 export default App
