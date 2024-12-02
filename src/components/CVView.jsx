@@ -4,7 +4,7 @@ import "../styles/cvView.css"
 export default function CVView({left=[],leftColor="white",right=[],rightColor="#008"}){
     return(
         <>
-         <aside>
+         <aside id="Viewer">
                 <div className='left' style={{color:leftColor}}>
                     {
                     left.map(e=>(

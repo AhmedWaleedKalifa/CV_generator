@@ -21,7 +21,7 @@ export default function OutputSection({title="",array,color}){
             { 
                 array.filter(e=>e.name !="image").map(e=>(
                     <li key={e.name} >
-                        <OutputField name={e.name} value={e.value} fontSize={e.fontSize} color={color} key={e.name}/>
+                        <OutputField name={e.name} value={e.value} color={color} key={e.name}/>
                     </li>
                 ))
             }
