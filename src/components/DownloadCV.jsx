@@ -3,20 +3,17 @@ import html2pdf from 'html2pdf.js';
 
 export default function DownloadCV({elementId,name}){
     function handleDownload() {
-    console.log("Downloading")
     const element=document.getElementById(elementId);
     // html2pdf(element);
     html2pdf()
     .set({
-        margin: 0,
+        margin: -10,
         filename: `${name}_CV.pdf`, 
         html2canvas: { scale: 2 },
         jsPDF: { format: 'a4', orientation: 'portrait' }
     })
     .from(element)
     .save();
-
-
     }
 
     
