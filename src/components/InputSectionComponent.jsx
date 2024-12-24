@@ -4,12 +4,12 @@ import "../styles/inputSectionComponent.css"
 export default function InputSectionComponent({title,array}){
     const [display,setDisplay]=useState(false)
     const [expand,setExpand]=useState(true)
-    const [formValue,setFormValue]=useState({});
-    function handelClick(e){
-        let value=e.target.value;
-        let name=e.target.name
-        setFormValue(values=>({...values,[name]:value}))
-        console.log(formValue)
+    // const [formValue,setFormValue]=useState({});
+    function handelClick(){
+        // let value=e.target.value;
+        // let name=e.target.name
+        // setFormValue(values=>({...values,[name]:value}))
+        // console.log(formValue)
         if(display==true){
             setDisplay(false)
             setExpand(true)
